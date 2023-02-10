@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h4 class="">Update Data</h4>
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Update" class="btn btn-success">
+                <a href="/" class="btn btn-danger">Back</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
